@@ -1,0 +1,8 @@
+<p>rainfall works!</p>
+<<<<<<< Updated upstream
+<app-data-tab></app-data-tab>
+<app-map></app-map>
+=======
+<app-map></app-map>
+<app-data-tab></app-data-tab>
+>>>>>>> Stashed changes

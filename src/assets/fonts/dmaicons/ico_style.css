@@ -1,0 +1,509 @@
+@font-face {
+  font-family: 'dmaicons';
+  src:  url('fonts/dmaicons.eot?e7y0l3');
+  src:  url('fonts/dmaicons.eot?e7y0l3#iefix') format('embedded-opentype'),
+    url('fonts/dmaicons.ttf?e7y0l3') format('truetype'),
+    url('fonts/dmaicons.woff?e7y0l3') format('woff'),
+    url('fonts/dmaicons.svg?e7y0l3#dmaicons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="di-"], [class*=" di-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'dmaicons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.di-applications:before {
+  content: "\e92f";
+}
+.di-clear:before {
+  content: "\e930";
+}
+.di-cursor:before {
+  content: "\e931";
+}
+.di-dam:before {
+  content: "\e932";
+}
+.di-data:before {
+  content: "\e933";
+}
+.di-evaporation:before {
+  content: "\e934";
+}
+.di-help:before {
+  content: "\e935";
+}
+.di-landscape:before {
+  content: "\e936";
+}
+.di-layers1:before {
+  content: "\e937";
+}
+.di-more:before {
+  content: "\e938";
+}
+.di-rain:before {
+  content: "\e939";
+}
+.di-report:before {
+  content: "\e93a";
+}
+.di-river_point:before {
+  content: "\e93b";
+}
+.di-soil:before {
+  content: "\e93c";
+}
+.di-water:before {
+  content: "\e93d";
+}
+.di-reports .path1:before {
+  content: "\e954";
+  color: rgb(0, 0, 0);
+}
+.di-reports .path2:before {
+  content: "\e955";
+  margin-left: -1.3330078125em;
+  color: rgb(255, 255, 255);
+}
+.di-reports .path3:before {
+  content: "\e956";
+  margin-left: -1.3330078125em;
+  color: rgb(255, 255, 255);
+}
+.di-reports .path4:before {
+  content: "\e957";
+  margin-left: -1.3330078125em;
+  color: rgb(255, 255, 255);
+}
+.di-report_2 .path1:before {
+  content: "\e950";
+  color: rgb(0, 0, 0);
+}
+.di-report_2 .path2:before {
+  content: "\e951";
+  margin-left: -1.3330078125em;
+  color: rgb(255, 255, 255);
+}
+.di-report_2 .path3:before {
+  content: "\e952";
+  margin-left: -1.3330078125em;
+  color: rgb(255, 255, 255);
+}
+.di-report_2 .path4:before {
+  content: "\e953";
+  margin-left: -1.3330078125em;
+  color: rgb(255, 255, 255);
+}
+.di-information:before {
+  content: "\e94f";
+}
+.di-home1:before {
+  content: "\e94e";
+}
+.di-applications1:before {
+  content: "\e93e";
+}
+.di-clear1:before {
+  content: "\e93f";
+}
+.di-cursor1:before {
+  content: "\e940";
+}
+.di-dam1:before {
+  content: "\e941";
+}
+.di-data1:before {
+  content: "\e942";
+}
+.di-evaporation1:before {
+  content: "\e943";
+}
+.di-help1:before {
+  content: "\e944";
+}
+.di-landscape1:before {
+  content: "\e945";
+}
+.di-layers2:before {
+  content: "\e946";
+}
+.di-more1:before {
+  content: "\e947";
+}
+.di-rain1:before {
+  content: "\e948";
+}
+.di-report1:before {
+  content: "\e949";
+}
+.di-river_point1:before {
+  content: "\e94a";
+}
+.di-soil1:before {
+  content: "\e94b";
+}
+.di-water1:before {
+  content: "\e94c";
+}
+.di-water-well:before {
+  content: "\e94d";
+}
+.di-area-shape:before {
+  content: "\e928";
+}
+.di-minus:before {
+  content: "\e929";
+}
+.di-plus:before {
+  content: "\e92a";
+}
+.di-line:before {
+  content: "\e920";
+}
+.di-rectangle:before {
+  content: "\e921";
+}
+.di-triangle:before {
+  content: "\e922";
+}
+.di-circle:before {
+  content: "\e923";
+}
+.di-free-hand:before {
+  content: "\e924";
+}
+.di-point:before {
+  content: "\e925";
+}
+.di-polygan:before {
+  content: "\e926";
+}
+.di-add:before {
+  content: "\e927";
+}
+.di-layer-down-arrow:before {
+  content: "\e91e";
+}
+.di-layer-right-arrow:before {
+  content: "\e91f";
+}
+.di-expand-layers:before {
+  content: "\e91d";
+}
+.di-left-arrow:before {
+  content: "\e91b";
+}
+.di-right-arrow:before {
+  content: "\e91c";
+}
+.di-heart-fill:before {
+  content: "\e917";
+}
+.di-heart-off:before {
+  content: "\e918";
+}
+.di-others:before {
+  content: "\e919";
+}
+.di-trade-licenece:before {
+  content: "\e91a";
+}
+.di-home:before {
+  content: "\e916";
+}
+.di-add-shape:before {
+  content: "\e900";
+}
+.di-blackspotmonitoring:before {
+  content: "\e901";
+}
+.di-compare:before {
+  content: "\e902";
+}
+.di-data-analysis:before {
+  content: "\e903";
+}
+.di-digital-number:before {
+  content: "\e904";
+}
+.di-dma-applications:before {
+  content: "\e905";
+}
+.di-dmamore:before {
+  content: "\e906";
+}
+.di-drainage-network:before {
+  content: "\e907";
+}
+.di-fullscreen:before {
+  content: "\e908";
+}
+.di-geoportal:before {
+  content: "\e909";
+}
+.di-grievance:before {
+  content: "\e90a";
+}
+.di-layers:before {
+  content: "\e90b";
+}
+.di-legend:before {
+  content: "\e90c";
+}
+.di-measure:before {
+  content: "\e90d";
+}
+.di-nearme:before {
+  content: "\e90e";
+}
+.di-print-tool:before {
+  content: "\e90f";
+}
+.di-propertytax:before {
+  content: "\e910";
+}
+.di-road-network:before {
+  content: "\e911";
+}
+.di-search-by-rectangle:before {
+  content: "\e912";
+}
+.di-watercharges:before {
+  content: "\e913";
+}
+.di-water-supplynetwork:before {
+  content: "\e914";
+}
+.di-works-module:before {
+  content: "\e915";
+}
+.di-reports1 .path1:before {
+  content: "\e958";
+  color: rgb(0, 0, 0);
+}
+.di-reports1 .path2:before {
+  content: "\e996";
+  margin-left: -1.3330078125em;
+  color: rgb(255, 255, 255);
+}
+.di-reports1 .path3:before {
+  content: "\e997";
+  margin-left: -1.3330078125em;
+  color: rgb(255, 255, 255);
+}
+.di-reports1 .path4:before {
+  content: "\e998";
+  margin-left: -1.3330078125em;
+  color: rgb(255, 255, 255);
+}
+.di-information1:before {
+  content: "\e959";
+}
+.di-home11:before {
+  content: "\e95a";
+}
+.di-applications11:before {
+  content: "\e95b";
+}
+.di-clear11:before {
+  content: "\e95c";
+}
+.di-cursor11:before {
+  content: "\e95d";
+}
+.di-dam11:before {
+  content: "\e95e";
+}
+.di-data11:before {
+  content: "\e95f";
+}
+.di-evaporation11:before {
+  content: "\e960";
+}
+.di-help11:before {
+  content: "\e961";
+}
+.di-landscape11:before {
+  content: "\e962";
+}
+.di-layers21:before {
+  content: "\e963";
+}
+.di-more11:before {
+  content: "\e964";
+}
+.di-rain11:before {
+  content: "\e965";
+}
+.di-report11:before {
+  content: "\e966";
+}
+.di-river_point11:before {
+  content: "\e967";
+}
+.di-soil11:before {
+  content: "\e968";
+}
+.di-water11:before {
+  content: "\e969";
+}
+.di-water-well1:before {
+  content: "\e96a";
+}
+.di-area-shape1:before {
+  content: "\e96b";
+}
+.di-minus1:before {
+  content: "\e96c";
+}
+.di-plus1:before {
+  content: "\e96d";
+}
+.di-line1:before {
+  content: "\e96e";
+}
+.di-rectangle1:before {
+  content: "\e96f";
+}
+.di-triangle1:before {
+  content: "\e970";
+}
+.di-circle1:before {
+  content: "\e971";
+}
+.di-free-hand1:before {
+  content: "\e972";
+}
+.di-point1:before {
+  content: "\e973";
+}
+.di-polygan1:before {
+  content: "\e974";
+}
+.di-add1:before {
+  content: "\e975";
+}
+.di-layer-down-arrow1:before {
+  content: "\e976";
+}
+.di-layer-right-arrow1:before {
+  content: "\e977";
+}
+.di-expand-layers1:before {
+  content: "\e978";
+}
+.di-left-arrow1:before {
+  content: "\e979";
+}
+.di-right-arrow1:before {
+  content: "\e97a";
+}
+.di-heart-fill1:before {
+  content: "\e97b";
+}
+.di-heart-off1:before {
+  content: "\e97c";
+}
+.di-others1:before {
+  content: "\e97d";
+}
+.di-trade-licenece1:before {
+  content: "\e97e";
+}
+.di-home2:before {
+  content: "\e97f";
+}
+.di-add-shape1:before {
+  content: "\e980";
+}
+.di-blackspotmonitoring1:before {
+  content: "\e981";
+}
+.di-compare1:before {
+  content: "\e982";
+}
+.di-data-analysis1:before {
+  content: "\e983";
+}
+.di-digital-number1:before {
+  content: "\e984";
+}
+.di-dma-applications1:before {
+  content: "\e985";
+}
+.di-dmamore1:before {
+  content: "\e986";
+}
+.di-drainage-network1:before {
+  content: "\e987";
+}
+.di-fullscreen1:before {
+  content: "\e988";
+}
+.di-geoportal1:before {
+  content: "\e989";
+}
+.di-grievance1:before {
+  content: "\e98a";
+}
+.di-layers3:before {
+  content: "\e98b";
+}
+.di-legend1:before {
+  content: "\e98c";
+}
+.di-measure1:before {
+  content: "\e98d";
+}
+.di-nearme1:before {
+  content: "\e98e";
+}
+.di-print-tool1:before {
+  content: "\e98f";
+}
+.di-propertytax1:before {
+  content: "\e990";
+}
+.di-road-network1:before {
+  content: "\e991";
+}
+.di-search-by-rectangle1:before {
+  content: "\e992";
+}
+.di-watercharges1:before {
+  content: "\e993";
+}
+.di-water-supplynetwork1:before {
+  content: "\e994";
+}
+.di-works-module1:before {
+  content: "\e995";
+}
+.di-collapse:before {
+  content: "\e92d";
+}
+.di-expand:before {
+  content: "\e92e";
+}
+.di-star-fill:before {
+  content: "\e92b";
+}
+.di-star-outline:before {
+  content: "\e92c";
+}
+.di-cross:before {
+  content: "\ea0f";
+}

@@ -1,0 +1,491 @@
+/* .side_menu css start ***/
+.accordian_sidemenu .panel p .icon {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    position: absolute;
+    left: 10px;
+    top: 8px;
+    overflow: hidden;
+  
+  }
+  
+  .accordian_sidemenu .panel p .icon img {
+    width: 100%
+  }
+  
+  .accordian_sidemenu .panel p .icon {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    position: absolute;
+    left: 10px;
+    top: 8px;
+    overflow: hidden;
+  }
+  
+  .accordian_sidemenu .panel p .icon img {
+    width: 100%;
+  }
+  
+  .accordian_sidemenu .panel .nav-tabs.tab-content .active {
+    background: none
+  }
+  
+  .accordian_sidemenu .panel .nav-tabs li {
+    padding: 10px 20px;
+    width: 50%;
+    cursor: pointer;
+    text-align: center;
+    background: #3a3a3a
+  }
+  
+  .accordian_sidemenu .panel .nav-tabs li.active {
+    background-color: #000
+  }
+  
+  .accordian_sidemenu .panel .nav-tabs li a {
+    color: #ccc;
+    padding: 0px;
+    background: transparent;
+    border: none;
+    margin: 0px
+  }
+  
+  .accordian_sidemenu .panel .nav-tabs li.active a,
+  .accordian_sidemenu .panel .nav-tabs li.active a:hover {
+    color: #3398dc !important
+  }
+  
+  .accordian_sidemenu .panel {
+    padding: 0;
+    border: none;
+    margin: 0;
+    border-top: 0;
+    background: #dcd8d8;
+    color: #fff;
+  }
+  
+  .accordian_sidemenu .panel p {
+    position: relative;
+    margin: 0px;
+  }
+  
+  .accordian_sidemenu .panel p:hover a {
+    color: #fff
+  }
+  
+  .accordian_sidemenu .panel label {
+    padding: 12px 15px;
+    color: #fff;
+    font-size: 13px;
+    display: block;
+    border-radius: 3px;
+    margin: 15px;
+    text-decoration: none;
+    background: #1d1c1c;
+    font-weight: 400;
+    border: 0.5px solid #707070;
+    line-height: 110%;
+  }
+  
+  #baselayers p {
+    padding-left: 50px;
+  }
+  
+  .accordian_sidemenu .panel p:hover {
+    background: transparent
+  }
+  
+  .accordian_sidemenu .panel p:last-child a {
+    margin: 0px
+  }
+  
+  .accordian_sidemenu .panel a {
+    padding: 10px 15px;
+    color: #fff;
+    font-size: 13px;
+    display: block;
+    border-radius: 3px;
+    margin: 0px 0 12px 0;
+    text-decoration: none;
+    background: #1d1c1c;
+    font-weight: 400;
+    border: 0.5px solid #707070;
+  }
+  
+  /*.accordian_sidemenu .panel p:last-child a{border-bottom: 1px solid #404040;}*/
+  .accordian_sidemenu .panel a:hover {
+    background: #1d1c1c;
+    border: 0.5px solid #3398dc;
+    color: #3398dc
+  }
+  
+  .accordian_sidemenu .panel .info_icn {
+    position: absolute;
+    right: 15px;
+    top: 13px;
+  }
+  
+  .accordian_sidemenu .panel .form-control {
+    background: #fff;
+    border: 1px solid #6d6c6c;
+    color: #868686;
+  }
+  
+  .accordion {
+    color: #fff;
+    cursor: pointer;
+    padding: 5px 10px;
+    width: 100%;
+    text-align: left;
+    transition: 0.4s;
+    font-size: 14px;
+    font-weight: 400;
+    border: none;
+    margin: 1px 0 0px 0;
+    background: #3a3a3a;
+    font-size: 14px;
+    ;
+  }
+  
+  .accordion1 {
+    color: #fff;
+    cursor: pointer;
+    padding: 5px 10px;
+    width: 100%;
+    text-align: left;
+    transition: 0.4s;
+    font-size: 14px;
+    font-weight: 400;
+    border: none;
+    margin: 1px 0 0px 0;
+    background: #3a3a3a;
+    font-size: 14px;
+    ;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .accordion.active,
+  .accordion:hover {
+    background-color: #383838;
+  }
+  
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 35px;
+    height: 19px;
+    margin: 0;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #525252;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 12px;
+    width: 12px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  /* input:checked + .slider {
+  background-color: #2196F3;
+  } */
+  
+  input:focus+.slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked+.slider:before {
+    -webkit-transform: translateX(16px);
+    -ms-transform: translateX(16px);
+    transform: translateX(16px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  
+  /* Style the tab */
+  .p0 {
+    padding: 0px
+  }
+  
+  .side_menu {
+    position: absolute;
+    left: -10px;
+    /* top: -72px; */
+    z-index: 99;
+    height: 100vh;
+    top: -10px;
+    background: transparent;
+  }
+  
+  .tab {
+    float: left;
+    width: 65px;
+    height: 100%;
+    margin: 0;
+    border: none;
+    overflow: hidden;
+    box-shadow: 0 0 5px 0px #6d6d6d;
+    background: rgba(1, 4, 9, 0.84) !important;
+    top: -10px;
+  }
+  
+  /* Style the buttons that are used to open the tab content */
+  .tab button {
+    display: block;
+    color: #fff;
+    margin: 0;
+    width: 65px;
+    outline: none;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+    height: 70px !important;
+    padding: 0;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  .tab button em {
+    font-size: 11px;
+    font-style: normal;
+    display: block;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: #000;
+    color: #3398dc !important
+  }
+  
+  /* Create an active/current "tab button" class */
+  .tab button.active {
+    background-color: #000000;
+    box-shadow: 0 0 4px 4px #242424;
+  }
+  
+  .tab button.active>span,
+  .tab button.active>em {
+    color: #3398dc
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    /*	box-shadow: 0 0px 5px 0px #8a8a8a;*/
+    padding: 0;
+    float: left;
+    /*    border-right: 1px solid #e4e1e1;*/
+    width: 275px;
+    /*    height: 850px;*/
+    height: 100%;
+    position: absolute;
+    left: 65px;
+    z-index: 99;
+    background: #000;
+    top: 0px;
+    opacity: 1;
+    transition: visibility 0s, opacity 0.5s linear;
+    /*    overflow-y: auto;*/
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    overflow-y: auto;
+  }
+  
+  .tab-pane {
+    background: #000;
+    padding: 0;
+  }
+  
+  .tabcontent h4 {
+    padding: 0 10px;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .close_side_btn {
+    position: absolute;
+    cursor: pointer;
+    right: 4px;
+    padding: 11px 4px;
+    top: 0px;
+    background: none;
+  }
+  
+  /*
+  .baselayertext{
+    padding-left: 15%;
+  }
+  */
+  
+  /* .side_menu css end ***/
+  
+  #rainfall_form label {
+    padding: 0px 0 5px 0
+  }
+  
+  #rainfall_form .panel {
+    padding: 15px
+  }
+  
+  .back_to_app {
+    cursor: pointer;
+    background: none;
+    border-radius: 20px;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+  }
+  
+  /*.info_ic{position: absolute; right: 10px; top:10px; z-index: 99}*/
+  
+  .side_menu hr {
+    margin: 10px 12px 10px 8px;
+    border-color: rgba(255, 255, 255, 0.3686274509803922);
+  }
+  
+  .accordian_sidemenu .panel .form-group label {
+    padding: 5px !important;
+    border-radius: 5px 5px 0 0;
+  }
+  
+  /*.baselayertext{padding-left:50px!important;line-height:290%;}*/
+  .accordian_sidemenu .panel {
+    background: #000;
+    padding: 10px
+  }
+  
+  .tabcontent h5 {
+    background: #333;
+    padding: 10px;
+    color: #fff;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    line-height: 130%;
+    margin: 0px
+  }
+  
+  select.form-control {
+    box-shadow: 0 0 3px 1px #e4e4e4;
+  }
+  
+  .leaflet-container {
+    font-size: 13px;
+  }
+  
+  .accordian_sidemenu_active {
+    background: #3398dc !important;
+    color: #fff !important
+  }
+  
+  .tab-pane.base_layesr {
+    padding: 15px
+  }
+  
+  .tab-pane a.baselayertext {
+    padding: 12px 0 15px 50px !important;
+  }
+  
+  .toggle-content {
+    min-height: 40px;
+  }
+  
+  .itemDisabled {
+    opacity: .4;
+    cursor: not-allowed;
+  }
+  
+  
+  
+  
+  @media only screen and (max-width: 769px) {
+  
+  
+    .res_menu {
+      background: #000;
+      color: #fff;
+      padding: 4px 12px;
+      margin-top: 2px;
+      border: 1px solid #3a3a3a;
+      border-radius: 2px;
+      font-size: 20px;
+    }
+   
+  
+    .tabcontent {
+      width: 99vw;
+      z-index: 999;
+      top: 0;
+      left: 0;
+      border: 1px solid #fff;
+    }
+  
+    .tablinks_logo {
+      display: none !important
+    }
+  
+    .close_side_btn_mobDevice {
+      height: 65px;
+      width: 65px;
+      background: #000;
+      display: block;
+      font-size: 24px;
+      color: #fff;
+      text-align: center;
+      line-height: 65px;
+    }
+  
+    .leaflet-top.leaflet-left {
+      position: relative;
+      z-index: 100000;
+    }
+  }
+  .waterauditactive{
+    background: #3398dc !important;
+  }
+  .tab[_ngcontent-fgq-c4] {
+    float: left;
+    width: 65px;
+    height: 100%;
+    margin: 0;
+    border: none;
+    overflow: hidden;
+    box-shadow: 0 0 5px 0 #6d6d6d;
+    background: rgba(1,4,9,.84)!important;
+    top: -10px;
+}
+.di-applications:before {
+    content: "\e92f";
+  }

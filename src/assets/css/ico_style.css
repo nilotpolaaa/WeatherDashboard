@@ -1,0 +1,175 @@
+@font-face {
+  font-family: 'dmaicons';
+  src:  url('../../assets/fonts/dmaicons/fonts/dmaicons.eot?6acgbl');
+  src:  url('../../assets/fonts/dmaicons/fonts/dmaicons.eot?6acgbl#iefix') format('embedded-opentype'),
+    url('../../assets/fonts/dmaicons/fonts/dmaicons.ttf?6acgbl') format('truetype'),
+    url('../../assets/fonts/dmaicons/fonts/dmaicons.woff?6acgbl') format('woff'),
+    url('../../assets/fonts/dmaicons/fonts/dmaicons.svg?6acgbl#dmaicons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="di-"], [class*=" di-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'dmaicons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.di-collapse:before {
+  content: "\e92d";
+}
+.di-expand:before {
+  content: "\e92e";
+}
+.di-star-fill:before {
+  content: "\e92b";
+}
+.di-star-outline:before {
+  content: "\e92c";
+}
+.di-cross:before {
+  content: "\ea0f";
+}
+.di-area-shape:before {
+  content: "\e928";
+}
+.di-minus:before {
+  content: "\e929";
+}
+.di-plus:before {
+  content: "\e92a";
+}
+.di-line:before {
+  content: "\e920";
+}
+.di-rectangle:before {
+  content: "\e921";
+}
+.di-triangle:before {
+  content: "\e922";
+}
+.di-circle:before {
+  content: "\e923";
+}
+.di-free-hand:before {
+  content: "\e924";
+}
+.di-point:before {
+  content: "\e925";
+}
+.di-polygan:before {
+  content: "\e926";
+}
+.di-add:before {
+  content: "\e927";
+}
+.di-layer-down-arrow:before {
+  content: "\e91e";
+}
+.di-layer-right-arrow:before {
+  content: "\e91f";
+}
+.di-expand-layers:before {
+  content: "\e91d";
+}
+.di-left-arrow:before {
+  content: "\e91b";
+}
+.di-right-arrow:before {
+  content: "\e91c";
+}
+.di-heart-fill:before {
+  content: "\e917";
+}
+.di-heart-off:before {
+  content: "\e918";
+}
+.di-others:before {
+  content: "\e919";
+}
+.di-trade-licenece:before {
+  content: "\e91a";
+}
+.di-home:before {
+  content: "\e916";
+}
+.di-add-shape:before {
+  content: "\e900";
+}
+.di-blackspotmonitoring:before {
+  content: "\e901";
+}
+.di-compare:before {
+  content: "\e902";
+}
+.di-data-analysis:before {
+  content: "\e903";
+}
+.di-digital-number:before {
+  content: "\e904";
+}
+.di-dma-applications:before {
+  content: "\e905";
+}
+.di-dmamore:before {
+  content: "\e906";
+}
+.di-drainage-network:before {
+  content: "\e907";
+}
+.di-fullscreen:before {
+  content: "\e908";
+}
+.di-geoportal:before {
+  content: "\e909";
+}
+.di-grievance:before {
+  content: "\e90a";
+}
+.di-layers:before {
+  content: "\e90b";
+}
+.di-legend:before {
+  content: "\e90c";
+}
+.di-measure:before {
+  content: "\e90d";
+}
+.di-nearme:before {
+  content: "\e90e";
+}
+.di-print-tool:before {
+  content: "\e90f";
+}
+.di-propertytax:before {
+  content: "\e910";
+}
+.di-road-network:before {
+  content: "\e911";
+}
+.di-search-by-rectangle:before {
+  content: "\e912";
+}
+.di-watercharges:before {
+  content: "\e913";
+}
+.di-water-supplynetwork:before {
+  content: "\e914";
+}
+.di-works-module:before {
+  content: "\e915";
+}
+
+
+.app_form .col-12{margin: 0 0 10px 0;padding: 0;}
+.app_form .col-12 label{ font-size: 14px; margin: 0px;color: #b5b5b5;}
+.back_to_app:hover{cursor: pointer;color: #0080ff;}

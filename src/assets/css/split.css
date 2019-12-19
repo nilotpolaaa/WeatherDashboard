@@ -1,0 +1,71 @@
+body,html {
+    height: 100%;
+    margin: 0;
+}
+.split {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    /* overflow-y: auto;
+    overflow-x: hidden; */
+    position: relative;
+}
+
+.split.content {
+    /* border: 1px solid #C0C0C0; */
+    /* box-shadow: inset 0 1px 2px #e4e4e4; */
+    background-color: #fff;
+}
+
+.gutter {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+.as-split-gutter-icon{
+    display: none;
+}
+.as-split-gutter,.gutter.gutter-vertical{
+    background:#2e2e2e !important;
+    position: relative;
+}
+.as-split-gutter {
+    cursor: col-resize;
+	height: 99.7vh;
+    
+}
+.as-split-gutter:before, .as-split-gutter:after{
+    content: "";
+    height: 20px;
+    background:rgb(141, 141, 141) !important;
+    width: 1px;
+    position: absolute;
+    top: 50%;
+    margin-top: -10px;
+    
+}
+.as-split-gutter:before{
+    left: 3px;
+}
+.as-split-gutter:after{
+    right: 3px;
+}
+
+.gutter.gutter-vertical {
+    cursor: row-resize;
+}
+
+.split.split-horizontal,
+.as-split-gutter {
+    height: 100%;
+    /* float: left; */
+}
+.split.content.split-content-right{
+    background: #000 !important;
+}
+
+.as-horizontal.as-percent.as-init{background: #000}
+.as-horizontal > .as-split-gutter{ height: 99.7vh!important}
+
+
+
