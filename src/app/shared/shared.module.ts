@@ -14,6 +14,6 @@ import { DataTabComponent } from './data-tab/data-tab.component';
     CommonModule,
     AppRoutingModule
   ],
-  exports: [HeaderComponent, FooterComponent, SideNavBarComponent]
+  exports: [HeaderComponent, FooterComponent, SideNavBarComponent, MapComponent, DataTabComponent]
 })
 export class SharedModule { }
