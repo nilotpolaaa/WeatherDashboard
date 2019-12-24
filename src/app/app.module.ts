@@ -12,7 +12,7 @@ import { SharedModule } from './shared/shared.module';
 import { GeoportalComponent } from './geoportal/geoportal.component';
 import { GeoportalModule } from './geoportal/geoportal.module';
 import { ExtremeWeatherModule } from './geoportal/extreme-weather/extreme-weather.module';
-
+import {AngularSplitModule} from 'angular-split';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,6 +28,7 @@ import { ExtremeWeatherModule } from './geoportal/extreme-weather/extreme-weathe
     // FlowForecastModule,
     // DrinkingWaterStressModule,
     BrowserModule,
+    AngularSplitModule,
     AppRoutingModule
   ],
   providers: [],
