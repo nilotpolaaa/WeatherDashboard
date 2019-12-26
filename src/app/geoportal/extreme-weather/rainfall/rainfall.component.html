@@ -1,3 +1,524 @@
 <p>rainfall works!</p>
-<app-map></app-map>
-<app-data-tab></app-data-tab>
+<!-- <app-map></app-map> -->
+<!-- <app-data-tab></app-data-tab> -->
+
+<!-- <div id="detail" class="detail plugin-mobile-bottom-red bottom-border open" data-webcams="empty" style="display: block;" data-model="ecmwf" data-display="table" data-position="land" data-extended="null">
+    <div class="closing-x"></div>
+    <div class="timecode ghost-timecode noselect desktop-timecode" style="opacity: 0; left: 750px;">
+        <div class="box">1 AM</div>
+    </div>
+    <div class="timecode main-timecode noselect desktop-timecode" style="left: 448.25px;">
+        <div class="box">6 PM</div>
+        <div class="loading ld-lgray size-l loader-path"></div>
+    </div>
+    <div class="slider-wrapper"><canvas></canvas>
+        <table></table>
+        <div class="slider">
+            <div class="handle grab"></div>
+        </div>
+        <div class="alerts-line" style="display: none;"></div>
+        <div class="slider-rain" style="display: none;"></div>
+    </div>
+    <div class="table-wrapper show noselect notap">
+        <div class="legend" data-ref="legend" data-title=" " title=" ">
+            <div class="legend-days height-days"><span class="legend-left"></span><span class="legend-right"></span></div>
+            <div class="legend-hour height-hour d-display-table"><span class="legend-left">Hours</span><span data-do="metric,hour" class="legend-right "></span></div>
+            <div class="legend-icon height-icon d-display-table"><span class="legend-left"></span><span data-do="metric,icon" class="legend-right "></span></div>
+            <div class="legend-temp height-temp d-display-table"><span class="legend-left">Temperature</span><span data-do="metric,temp" class="legend-right metric-clickable">°C</span></div>
+            <div class="legend-rain height-rain d-display-table"><span class="legend-left">Rain</span><span data-do="metric,rain" class="legend-right metric-clickable">mm</span></div>
+            <div class="legend-wind height-wind d-display-table"><span class="legend-left">Wind</span><span data-do="metric,wind" class="legend-right metric-clickable">kt</span></div>
+            <div class="legend-gust height-gust d-display-table"><span class="legend-left">Wind gusts</span><span data-do="metric,wind" class="legend-right metric-clickable">kt</span></div>
+            <div class="legend-windDir height-windDir d-display-table"><span class="legend-left">Wind dir.</span><span data-do="metric,windDir" class="legend-right "></span></div>
+        </div>
+        <div class="data-table noselect flex-container" data-ref="dataTable" style="height: 182px;">
+            <div class="forecast-table progress-bar" style="min-width: 1350px;"><canvas width="1350" height="154" style="width: 1350px; height: 154px;"></canvas>
+                <div class="progress-line" style="width: 1350px;">
+                    <div class="played" style="width: 348.25px;"></div>
+                    <div class="avbl"></div><i style="left: 66.5595px;"></i></div>
+                <table id="detail-data-table" class="grab" data-ref="dataTableTable" style="width: 1350px;">
+                    <tbody>
+                        <tr class="td-days height-days">
+                            <td colspan="5" class="sticky-title-wrapper" data-day="2019-12-24">
+                                <div class="sticky-title" data-daydiv="2019-12-24" style="visibility: visible; position: static; float: left; opacity: 1;">Tuesday 24</div>
+                            </td>
+                            <td colspan="8" class="sticky-title-wrapper" data-day="2019-12-25">
+                                <div class="sticky-title" data-daydiv="2019-12-25">Wednesday 25</div>
+                            </td>
+                            <td colspan="8" class="sticky-title-wrapper" data-day="2019-12-26">
+                                <div class="sticky-title" data-daydiv="2019-12-26">Thursday 26</div>
+                            </td>
+                            <td colspan="8" class="sticky-title-wrapper" data-day="2019-12-27">
+                                <div class="sticky-title" data-daydiv="2019-12-27">Friday 27</div>
+                            </td>
+                            <td colspan="8" class="sticky-title-wrapper" data-day="2019-12-28">
+                                <div class="sticky-title" data-daydiv="2019-12-28">Saturday 28</div>
+                            </td>
+                            <td colspan="8" class="sticky-title-wrapper" data-day="2019-12-29">
+                                <div class="sticky-title" data-daydiv="2019-12-29">Sunday 29</div>
+                            </td>
+                        </tr>
+                        <tr class="td-hour height-hour d-display-table">
+                            <td data-ts="1577160000000">9<small>AM</small></td>
+                            <td data-ts="1577170800000">12<small>PM</small></td>
+                            <td data-ts="1577181600000">3<small>PM</small></td>
+                            <td data-ts="1577192400000">6<small>PM</small></td>
+                            <td class="day-end" data-ts="1577203200000">9<small>PM</small></td>
+                            <td data-ts="1577214000000">0<small>AM</small></td>
+                            <td data-ts="1577224800000">3<small>AM</small></td>
+                            <td data-ts="1577235600000">6<small>AM</small></td>
+                            <td data-ts="1577246400000">9<small>AM</small></td>
+                            <td data-ts="1577257200000">12<small>PM</small></td>
+                            <td data-ts="1577268000000">3<small>PM</small></td>
+                            <td data-ts="1577278800000">6<small>PM</small></td>
+                            <td class="day-end" data-ts="1577289600000">9<small>PM</small></td>
+                            <td data-ts="1577300400000">0<small>AM</small></td>
+                            <td data-ts="1577311200000">3<small>AM</small></td>
+                            <td data-ts="1577322000000">6<small>AM</small></td>
+                            <td data-ts="1577332800000">9<small>AM</small></td>
+                            <td data-ts="1577343600000">12<small>PM</small></td>
+                            <td data-ts="1577354400000">3<small>PM</small></td>
+                            <td data-ts="1577365200000">6<small>PM</small></td>
+                            <td class="day-end" data-ts="1577376000000">9<small>PM</small></td>
+                            <td data-ts="1577386800000">0<small>AM</small></td>
+                            <td data-ts="1577397600000">3<small>AM</small></td>
+                            <td data-ts="1577408400000">6<small>AM</small></td>
+                            <td data-ts="1577419200000">9<small>AM</small></td>
+                            <td data-ts="1577430000000">12<small>PM</small></td>
+                            <td data-ts="1577440800000">3<small>PM</small></td>
+                            <td data-ts="1577451600000">6<small>PM</small></td>
+                            <td class="day-end" data-ts="1577462400000">9<small>PM</small></td>
+                            <td data-ts="1577473200000">0<small>AM</small></td>
+                            <td data-ts="1577484000000">3<small>AM</small></td>
+                            <td data-ts="1577494800000">6<small>AM</small></td>
+                            <td data-ts="1577505600000">9<small>AM</small></td>
+                            <td data-ts="1577516400000">12<small>PM</small></td>
+                            <td data-ts="1577527200000">3<small>PM</small></td>
+                            <td data-ts="1577538000000">6<small>PM</small></td>
+                            <td class="day-end" data-ts="1577548800000">9<small>PM</small></td>
+                            <td data-ts="1577559600000">0<small>AM</small></td>
+                            <td data-ts="1577570400000">3<small>AM</small></td>
+                            <td data-ts="1577581200000">6<small>AM</small></td>
+                            <td data-ts="1577592000000">9<small>AM</small></td>
+                            <td data-ts="1577602800000">12<small>PM</small></td>
+                            <td data-ts="1577613600000">3<small>PM</small></td>
+                            <td data-ts="1577624400000">6<small>PM</small></td>
+                            <td data-ts="1577635200000">9<small>PM</small></td>
+                        </tr>
+                        <tr class="td-icon height-icon d-display-table">
+                            <td><img src="img/icons4/png_25px/1.png" srcset="img/icons4/png_25@2x/1.png 2x"></td>
+                            <td><img src="img/icons4/png_25px/2.png" srcset="img/icons4/png_25@2x/2.png 2x"></td>
+                            <td><img src="img/icons4/png_25px/1.png" srcset="img/icons4/png_25@2x/1.png 2x"></td>
+                            <td><img src="img/icons4/png_25px/1_night_4.png" srcset="img/icons4/png_25@2x/1_night_4.png 2x"></td>
+                            <td class="day-end"><img src="img/icons4/png_25px/1_night_4.png" srcset="img/icons4/png_25@2x/1_night_4.png 2x"></td>
+                            <td><img src="img/icons4/png_25px/1_night_5.png" srcset="img/icons4/png_25@2x/1_night_5.png 2x"></td>
+                            <td><img src="img/icons4/png_25px/1_night_5.png" srcset="img/icons4/png_25@2x/1_night_5.png 2x"></td>
+                            <td><img src="img/icons4/png_25px/1.png" srcset="img/icons4/png_25@2x/1.png 2x"></td>
+                            <td><img src="img/icons4/png_25px/1.png" srcset="img/icons4/png_25@2x/1.png 2x"></td>
+                            <td><img src="img/icons4/png_25px/1.png" srcset="img/icons4/png_25@2x/1.png 2x"></td>
+                            <td><img src="img/icons4/png_25px/2.png" srcset="img/icons4/png_25@2x/2.png 2x"></td>
+                            <td><img src="img/icons4/png_25px/2_night_5.png" srcset="img/icons4/png_25@2x/2_night_5.png 2x"></td>
+                            <td class="day-end"><img src="img/icons4/png_25px/2_night_5.png" srcset="img/icons4/png_25@2x/2_night_5.png 2x"></td>
+                            <td><img src="img/icons4/png_25px/3_night_5.png" srcset="img/icons4/png_25@2x/3_night_5.png 2x"></td>
+                            <td><img src="img/icons4/png_25px/4_night_5.png" srcset="img/icons4/png_25@2x/4_night_5.png 2x"></td>
+                            <td><img src="img/icons4/png_25px/19.png" srcset="img/icons4/png_25@2x/19.png 2x"></td>
+                            <td><img src="img/icons4/png_25px/4.png" srcset="img/icons4/png_25@2x/4.png 2x"></td>
+                            <td><img src="img/icons4/png_25px/3.png" srcset="img/icons4/png_25@2x/3.png 2x"></td>
+                            <td><img src="img/icons4/png_25px/20.png" srcset="img/icons4/png_25@2x/20.png 2x"></td>
+                            <td><img src="img/icons4/png_25px/3_night_5.png" srcset="img/icons4/png_25@2x/3_night_5.png 2x"></td>
+                            <td class="day-end"><img src="img/icons4/png_25px/7_night_5.png" srcset="img/icons4/png_25@2x/7_night_5.png 2x"></td>
+                            <td><img src="img/icons4/png_25px/6_night_5.png" srcset="img/icons4/png_25@2x/6_night_5.png 2x"></td>
+                            <td><img src="img/icons4/png_25px/17_night_5.png" srcset="img/icons4/png_25@2x/17_night_5.png 2x"></td>
+                            <td><img src="img/icons4/png_25px/17.png" srcset="img/icons4/png_25@2x/17.png 2x"></td>
+                            <td><img src="img/icons4/png_25px/20.png" srcset="img/icons4/png_25@2x/20.png 2x"></td>
+                            <td><img src="img/icons4/png_25px/19.png" srcset="img/icons4/png_25@2x/19.png 2x"></td>
+                            <td><img src="img/icons4/png_25px/2.png" srcset="img/icons4/png_25@2x/2.png 2x"></td>
+                            <td><img src="img/icons4/png_25px/2_night_5.png" srcset="img/icons4/png_25@2x/2_night_5.png 2x"></td>
+                            <td class="day-end"><img src="img/icons4/png_25px/1_night_5.png" srcset="img/icons4/png_25@2x/1_night_5.png 2x"></td>
+                            <td><img src="img/icons4/png_25px/1_night_5.png" srcset="img/icons4/png_25@2x/1_night_5.png 2x"></td>
+                            <td><img src="img/icons4/png_25px/1_night_5.png" srcset="img/icons4/png_25@2x/1_night_5.png 2x"></td>
+                            <td><img src="img/icons4/png_25px/1.png" srcset="img/icons4/png_25@2x/1.png 2x"></td>
+                            <td><img src="img/icons4/png_25px/1.png" srcset="img/icons4/png_25@2x/1.png 2x"></td>
+                            <td><img src="img/icons4/png_25px/1.png" srcset="img/icons4/png_25@2x/1.png 2x"></td>
+                            <td><img src="img/icons4/png_25px/1.png" srcset="img/icons4/png_25@2x/1.png 2x"></td>
+                            <td><img src="img/icons4/png_25px/1_night_5.png" srcset="img/icons4/png_25@2x/1_night_5.png 2x"></td>
+                            <td class="day-end"><img src="img/icons4/png_25px/1_night_5.png" srcset="img/icons4/png_25@2x/1_night_5.png 2x"></td>
+                            <td><img src="img/icons4/png_25px/1_night_6.png" srcset="img/icons4/png_25@2x/1_night_6.png 2x"></td>
+                            <td><img src="img/icons4/png_25px/1_night_6.png" srcset="img/icons4/png_25@2x/1_night_6.png 2x"></td>
+                            <td><img src="img/icons4/png_25px/1.png" srcset="img/icons4/png_25@2x/1.png 2x"></td>
+                            <td><img src="img/icons4/png_25px/1.png" srcset="img/icons4/png_25@2x/1.png 2x"></td>
+                            <td><img src="img/icons4/png_25px/1.png" srcset="img/icons4/png_25@2x/1.png 2x"></td>
+                            <td><img src="img/icons4/png_25px/1.png" srcset="img/icons4/png_25@2x/1.png 2x"></td>
+                            <td><img src="img/icons4/png_25px/1_night_6.png" srcset="img/icons4/png_25@2x/1_night_6.png 2x"></td>
+                            <td><img src="img/icons4/png_25px/1_night_6.png" srcset="img/icons4/png_25@2x/1_night_6.png 2x"></td>
+                        </tr>
+                        <tr class="td-temp height-temp d-display-table">
+                            <td>22°</td>
+                            <td>27°</td>
+                            <td>29°</td>
+                            <td>25°</td>
+                            <td class="day-end">23°</td>
+                            <td>21°</td>
+                            <td>20°</td>
+                            <td>19°</td>
+                            <td>23°</td>
+                            <td>29°</td>
+                            <td>29°</td>
+                            <td>26°</td>
+                            <td class="day-end">24°</td>
+                            <td>24°</td>
+                            <td>22°</td>
+                            <td>21°</td>
+                            <td>22°</td>
+                            <td>25°</td>
+                            <td>25°</td>
+                            <td>22°</td>
+                            <td class="day-end">20°</td>
+                            <td>20°</td>
+                            <td>20°</td>
+                            <td>19°</td>
+                            <td>19°</td>
+                            <td>22°</td>
+                            <td>23°</td>
+                            <td>21°</td>
+                            <td class="day-end">18°</td>
+                            <td>16°</td>
+                            <td>14°</td>
+                            <td>13°</td>
+                            <td>16°</td>
+                            <td>22°</td>
+                            <td>23°</td>
+                            <td>18°</td>
+                            <td class="day-end">16°</td>
+                            <td>13°</td>
+                            <td>12°</td>
+                            <td>11°</td>
+                            <td>17°</td>
+                            <td>22°</td>
+                            <td>23°</td>
+                            <td>18°</td>
+                            <td>15°</td>
+                        </tr>
+                        <tr class="td-rain height-rain d-display-table">
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="day-end"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="day-end"></td>
+                            <td></td>
+                            <td></td>
+                            <td>0.9</td>
+                            <td></td>
+                            <td></td>
+                            <td>0.2</td>
+                            <td></td>
+                            <td class="day-end">7</td>
+                            <td>7</td>
+                            <td></td>
+                            <td></td>
+                            <td>0.5</td>
+                            <td>0.2</td>
+                            <td></td>
+                            <td></td>
+                            <td class="day-end"></td>
+                            <td></td>
+                            <td></td>
+                            <td>0.2</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="day-end"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class="td-wind height-wind d-display-table">
+                            <td style="background: linear-gradient(to right,rgb(244,244,244),rgb(244,244,244),rgb(244,244,244))">0</td>
+                            <td style="background: linear-gradient(to right,rgb(244,244,244),rgb(244,244,244),rgb(244,244,244))">3</td>
+                            <td style="background: linear-gradient(to right,rgb(244,244,244),rgb(244,244,244),rgb(244,244,244))">5</td>
+                            <td style="background: linear-gradient(to right,rgb(244,244,244),rgb(244,244,244),rgb(244,244,244))">4</td>
+                            <td class="day-end" style="background: linear-gradient(to right,rgb(244,244,244),rgb(213,239,245),rgb(213,239,245))">6</td>
+                            <td style="background: linear-gradient(to right,rgb(213,239,245),rgb(244,244,244),rgb(244,244,244))">6</td>
+                            <td style="background: linear-gradient(to right,rgb(244,244,244),rgb(244,244,244),rgb(244,244,244))">5</td>
+                            <td style="background: linear-gradient(to right,rgb(244,244,244),rgb(244,244,244),rgb(244,244,244))">2</td>
+                            <td style="background: linear-gradient(to right,rgb(244,244,244),rgb(244,244,244),rgb(244,244,244))">2</td>
+                            <td style="background: linear-gradient(to right,rgb(244,244,244),rgb(244,244,244),rgb(244,244,244))">3</td>
+                            <td style="background: linear-gradient(to right,rgb(244,244,244),rgb(244,244,244),rgb(244,244,244))">4</td>
+                            <td style="background: linear-gradient(to right,rgb(244,244,244),rgb(244,244,244),rgb(244,244,244))">3</td>
+                            <td class="day-end" style="background: linear-gradient(to right,rgb(244,244,244),rgb(244,244,244),rgb(244,244,244))">6</td>
+                            <td style="background: linear-gradient(to right,rgb(244,244,244),rgb(244,244,244),rgb(244,244,244))">5</td>
+                            <td style="background: linear-gradient(to right,rgb(244,244,244),rgb(244,244,244),rgb(244,244,244))">5</td>
+                            <td style="background: linear-gradient(to right,rgb(244,244,244),rgb(244,244,244),rgb(244,244,244))">4</td>
+                            <td style="background: linear-gradient(to right,rgb(244,244,244),rgb(244,244,244),rgb(244,244,244))">5</td>
+                            <td style="background: linear-gradient(to right,rgb(244,244,244),rgb(244,244,244),rgb(244,244,244))">5</td>
+                            <td style="background: linear-gradient(to right,rgb(244,244,244),rgb(244,244,244),rgb(244,244,244))">5</td>
+                            <td style="background: linear-gradient(to right,rgb(244,244,244),rgb(244,244,244),rgb(244,244,244))">3</td>
+                            <td class="day-end" style="background: linear-gradient(to right,rgb(244,244,244),rgb(244,244,244),rgb(244,244,244))">2</td>
+                            <td style="background: linear-gradient(to right,rgb(244,244,244),rgb(244,244,244),rgb(244,244,244))">1</td>
+                            <td style="background: linear-gradient(to right,rgb(244,244,244),rgb(244,244,244),rgb(244,244,244))">2</td>
+                            <td style="background: linear-gradient(to right,rgb(244,244,244),rgb(244,244,244),rgb(244,244,244))">1</td>
+                            <td style="background: linear-gradient(to right,rgb(244,244,244),rgb(244,244,244),rgb(244,244,244))">5</td>
+                            <td style="background: linear-gradient(to right,rgb(244,244,244),rgb(244,244,244),rgb(244,244,244))">5</td>
+                            <td style="background: linear-gradient(to right,rgb(244,244,244),rgb(244,244,244),rgb(244,244,244))">4</td>
+                            <td style="background: linear-gradient(to right,rgb(244,244,244),rgb(244,244,244),rgb(244,244,244))">2</td>
+                            <td class="day-end" style="background: linear-gradient(to right,rgb(244,244,244),rgb(244,244,244),rgb(244,244,244))">3</td>
+                            <td style="background: linear-gradient(to right,rgb(244,244,244),rgb(244,244,244),rgb(244,244,244))">3</td>
+                            <td style="background: linear-gradient(to right,rgb(244,244,244),rgb(244,244,244),rgb(244,244,244))">1</td>
+                            <td style="background: linear-gradient(to right,rgb(244,244,244),rgb(244,244,244),rgb(244,244,244))">1</td>
+                            <td style="background: linear-gradient(to right,rgb(244,244,244),rgb(244,244,244),rgb(244,244,244))">2</td>
+                            <td style="background: linear-gradient(to right,rgb(244,244,244),rgb(244,244,244),rgb(244,244,244))">3</td>
+                            <td style="background: linear-gradient(to right,rgb(244,244,244),rgb(244,244,244),rgb(244,244,244))">4</td>
+                            <td style="background: linear-gradient(to right,rgb(244,244,244),rgb(244,244,244),rgb(244,244,244))">3</td>
+                            <td class="day-end" style="background: linear-gradient(to right,rgb(244,244,244),rgb(244,244,244),rgb(244,244,244))">3</td>
+                            <td style="background: linear-gradient(to right,rgb(244,244,244),rgb(244,244,244),rgb(244,244,244))">3</td>
+                            <td style="background: linear-gradient(to right,rgb(244,244,244),rgb(244,244,244),rgb(244,244,244))">4</td>
+                            <td style="background: linear-gradient(to right,rgb(244,244,244),rgb(244,244,244),rgb(244,244,244))">2</td>
+                            <td style="background: linear-gradient(to right,rgb(244,244,244),rgb(244,244,244),rgb(244,244,244))">1</td>
+                            <td style="background: linear-gradient(to right,rgb(244,244,244),rgb(244,244,244),rgb(244,244,244))">3</td>
+                            <td style="background: linear-gradient(to right,rgb(244,244,244),rgb(244,244,244),rgb(244,244,244))">4</td>
+                            <td style="background: linear-gradient(to right,rgb(244,244,244),rgb(244,244,244),rgb(244,244,244))">3</td>
+                            <td style="background: linear-gradient(to right,rgb(244,244,244),rgb(244,244,244),rgb(244,244,244))">3</td>
+                        </tr>
+                        <tr class="td-gust height-gust d-display-table">
+                            <td style="background: linear-gradient(to right,rgb(213,239,245),rgb(213,239,245),rgb(0,211,224))">6</td>
+                            <td style="background: linear-gradient(to right,rgb(0,211,224),rgb(0,233,13),rgb(28,232,0))">12</td>
+                            <td style="background: linear-gradient(to right,rgb(28,232,0),rgb(104,220,0),rgb(104,220,0))">15</td>
+                            <td style="background: linear-gradient(to right,rgb(104,220,0),rgb(104,220,0),rgb(50,230,0))">16</td>
+                            <td class="day-end" style="background: linear-gradient(to right,rgb(50,230,0),rgb(10,232,0),rgb(28,232,0))">13</td>
+                            <td style="background: linear-gradient(to right,rgb(28,232,0),rgb(50,230,0),rgb(28,232,0))">14</td>
+                            <td style="background: linear-gradient(to right,rgb(28,232,0),rgb(10,232,0),rgb(0,233,13))">12</td>
+                            <td style="background: linear-gradient(to right,rgb(0,233,13),rgb(0,233,13),rgb(0,233,113))">12</td>
+                            <td style="background: linear-gradient(to right,rgb(0,233,113),rgb(23,205,254),rgb(0,224,172))">8</td>
+                            <td style="background: linear-gradient(to right,rgb(0,224,172),rgb(0,236,57),rgb(10,232,0))">11</td>
+                            <td style="background: linear-gradient(to right,rgb(10,232,0),rgb(50,230,0),rgb(50,230,0))">14</td>
+                            <td style="background: linear-gradient(to right,rgb(50,230,0),rgb(28,232,0),rgb(28,232,0))">13</td>
+                            <td class="day-end" style="background: linear-gradient(to right,rgb(28,232,0),rgb(28,232,0),rgb(28,232,0))">13</td>
+                            <td style="background: linear-gradient(to right,rgb(28,232,0),rgb(28,232,0),rgb(10,232,0))">13</td>
+                            <td style="background: linear-gradient(to right,rgb(10,232,0),rgb(10,232,0),rgb(0,233,13))">12</td>
+                            <td style="background: linear-gradient(to right,rgb(0,233,13),rgb(0,236,57),rgb(0,236,57))">11</td>
+                            <td style="background: linear-gradient(to right,rgb(0,236,57),rgb(0,233,13),rgb(28,232,0))">12</td>
+                            <td style="background: linear-gradient(to right,rgb(28,232,0),rgb(50,230,0),rgb(50,230,0))">14</td>
+                            <td style="background: linear-gradient(to right,rgb(50,230,0),rgb(50,230,0),rgb(50,230,0))">14</td>
+                            <td style="background: linear-gradient(to right,rgb(50,230,0),rgb(28,232,0),rgb(0,233,13))">13</td>
+                            <td class="day-end" style="background: linear-gradient(to right,rgb(0,233,13),rgb(0,233,113),rgb(23,205,254))">10</td>
+                            <td style="background: linear-gradient(to right,rgb(23,205,254),rgb(244,244,244),rgb(244,244,244))">6</td>
+                            <td style="background: linear-gradient(to right,rgb(244,244,244),rgb(244,244,244),rgb(244,244,244))">4</td>
+                            <td style="background: linear-gradient(to right,rgb(244,244,244),rgb(244,244,244),rgb(23,205,254))">4</td>
+                            <td style="background: linear-gradient(to right,rgb(23,205,254),rgb(0,236,57),rgb(10,232,0))">11</td>
+                            <td style="background: linear-gradient(to right,rgb(10,232,0),rgb(75,226,0),rgb(75,226,0))">14</td>
+                            <td style="background: linear-gradient(to right,rgb(75,226,0),rgb(75,226,0),rgb(10,232,0))">15</td>
+                            <td style="background: linear-gradient(to right,rgb(10,232,0),rgb(0,233,113),rgb(0,211,224))">10</td>
+                            <td class="day-end" style="background: linear-gradient(to right,rgb(0,211,224),rgb(118,222,250),rgb(213,239,245))">7</td>
+                            <td style="background: linear-gradient(to right,rgb(213,239,245),rgb(213,239,245),rgb(244,244,244))">6</td>
+                            <td style="background: linear-gradient(to right,rgb(244,244,244),rgb(244,244,244),rgb(244,244,244))">6</td>
+                            <td style="background: linear-gradient(to right,rgb(244,244,244),rgb(244,244,244),rgb(244,244,244))">4</td>
+                            <td style="background: linear-gradient(to right,rgb(244,244,244),rgb(244,244,244),rgb(23,205,254))">6</td>
+                            <td style="background: linear-gradient(to right,rgb(23,205,254),rgb(0,224,172),rgb(0,236,57))">10</td>
+                            <td style="background: linear-gradient(to right,rgb(0,236,57),rgb(0,233,13),rgb(0,233,13))">12</td>
+                            <td style="background: linear-gradient(to right,rgb(0,233,13),rgb(0,236,57),rgb(0,211,224))">11</td>
+                            <td class="day-end" style="background: linear-gradient(to right,rgb(0,211,224),rgb(213,239,245),rgb(213,239,245))">7</td>
+                            <td style="background: linear-gradient(to right,rgb(213,239,245),rgb(118,222,250),rgb(23,205,254))">7</td>
+                            <td style="background: linear-gradient(to right,rgb(23,205,254),rgb(0,211,224),rgb(23,205,254))">8</td>
+                            <td style="background: linear-gradient(to right,rgb(23,205,254),rgb(23,205,254),rgb(118,222,250))">8</td>
+                            <td style="background: linear-gradient(to right,rgb(118,222,250),rgb(213,239,245),rgb(0,211,224))">6</td>
+                            <td style="background: linear-gradient(to right,rgb(0,211,224),rgb(0,236,57),rgb(0,236,57))">11</td>
+                            <td style="background: linear-gradient(to right,rgb(0,236,57),rgb(0,233,13),rgb(0,233,13))">12</td>
+                            <td style="background: linear-gradient(to right,rgb(0,233,13),rgb(0,236,57),rgb(0,224,172))">11</td>
+                            <td style="background: linear-gradient(to right,rgb(0,224,172),rgb(118,222,250),rgb(118,222,250))">7</td>
+                        </tr>
+                        <tr class="td-windDir height-windDir d-display-table">
+                            <td>
+                                <div style="transform: rotate(149deg); -webkit-transform:rotate(149deg);">4</div>
+                            </td>
+                            <td>
+                                <div style="transform: rotate(9deg); -webkit-transform:rotate(9deg);">4</div>
+                            </td>
+                            <td>
+                                <div style="transform: rotate(359deg); -webkit-transform:rotate(359deg);">4</div>
+                            </td>
+                            <td>
+                                <div style="transform: rotate(48deg); -webkit-transform:rotate(48deg);">4</div>
+                            </td>
+                            <td class="day-end">
+                                <div style="transform: rotate(135deg); -webkit-transform:rotate(135deg);">4</div>
+                            </td>
+                            <td>
+                                <div style="transform: rotate(146deg); -webkit-transform:rotate(146deg);">4</div>
+                            </td>
+                            <td>
+                                <div style="transform: rotate(162deg); -webkit-transform:rotate(162deg);">4</div>
+                            </td>
+                            <td>
+                                <div style="transform: rotate(144deg); -webkit-transform:rotate(144deg);">4</div>
+                            </td>
+                            <td>
+                                <div style="transform: rotate(180deg); -webkit-transform:rotate(180deg);">4</div>
+                            </td>
+                            <td>
+                                <div style="transform: rotate(296deg); -webkit-transform:rotate(296deg);">4</div>
+                            </td>
+                            <td>
+                                <div style="transform: rotate(310deg); -webkit-transform:rotate(310deg);">4</div>
+                            </td>
+                            <td>
+                                <div style="transform: rotate(57deg); -webkit-transform:rotate(57deg);">4</div>
+                            </td>
+                            <td class="day-end">
+                                <div style="transform: rotate(133deg); -webkit-transform:rotate(133deg);">4</div>
+                            </td>
+                            <td>
+                                <div style="transform: rotate(184deg); -webkit-transform:rotate(184deg);">4</div>
+                            </td>
+                            <td>
+                                <div style="transform: rotate(191deg); -webkit-transform:rotate(191deg);">4</div>
+                            </td>
+                            <td>
+                                <div style="transform: rotate(210deg); -webkit-transform:rotate(210deg);">4</div>
+                            </td>
+                            <td>
+                                <div style="transform: rotate(238deg); -webkit-transform:rotate(238deg);">4</div>
+                            </td>
+                            <td>
+                                <div style="transform: rotate(279deg); -webkit-transform:rotate(279deg);">4</div>
+                            </td>
+                            <td>
+                                <div style="transform: rotate(295deg); -webkit-transform:rotate(295deg);">4</div>
+                            </td>
+                            <td>
+                                <div style="transform: rotate(9deg); -webkit-transform:rotate(9deg);">4</div>
+                            </td>
+                            <td class="day-end">
+                                <div style="transform: rotate(357deg); -webkit-transform:rotate(357deg);">4</div>
+                            </td>
+                            <td>
+                                <div style="transform: rotate(203deg); -webkit-transform:rotate(203deg);">4</div>
+                            </td>
+                            <td>
+                                <div style="transform: rotate(285deg); -webkit-transform:rotate(285deg);">4</div>
+                            </td>
+                            <td>
+                                <div style="transform: rotate(325deg); -webkit-transform:rotate(325deg);">4</div>
+                            </td>
+                            <td>
+                                <div style="transform: rotate(341deg); -webkit-transform:rotate(341deg);">4</div>
+                            </td>
+                            <td>
+                                <div style="transform: rotate(349deg); -webkit-transform:rotate(349deg);">4</div>
+                            </td>
+                            <td>
+                                <div style="transform: rotate(329deg); -webkit-transform:rotate(329deg);">4</div>
+                            </td>
+                            <td>
+                                <div style="transform: rotate(260deg); -webkit-transform:rotate(260deg);">4</div>
+                            </td>
+                            <td class="day-end">
+                                <div style="transform: rotate(20deg); -webkit-transform:rotate(20deg);">4</div>
+                            </td>
+                            <td>
+                                <div style="transform: rotate(16deg); -webkit-transform:rotate(16deg);">4</div>
+                            </td>
+                            <td>
+                                <div style="transform: rotate(71deg); -webkit-transform:rotate(71deg);">4</div>
+                            </td>
+                            <td>
+                                <div style="transform: rotate(48deg); -webkit-transform:rotate(48deg);">4</div>
+                            </td>
+                            <td>
+                                <div style="transform: rotate(56deg); -webkit-transform:rotate(56deg);">4</div>
+                            </td>
+                            <td>
+                                <div style="transform: rotate(338deg); -webkit-transform:rotate(338deg);">4</div>
+                            </td>
+                            <td>
+                                <div style="transform: rotate(328deg); -webkit-transform:rotate(328deg);">4</div>
+                            </td>
+                            <td>
+                                <div style="transform: rotate(3deg); -webkit-transform:rotate(3deg);">4</div>
+                            </td>
+                            <td class="day-end">
+                                <div style="transform: rotate(56deg); -webkit-transform:rotate(56deg);">4</div>
+                            </td>
+                            <td>
+                                <div style="transform: rotate(126deg); -webkit-transform:rotate(126deg);">4</div>
+                            </td>
+                            <td>
+                                <div style="transform: rotate(142deg); -webkit-transform:rotate(142deg);">4</div>
+                            </td>
+                            <td>
+                                <div style="transform: rotate(130deg); -webkit-transform:rotate(130deg);">4</div>
+                            </td>
+                            <td>
+                                <div style="transform: rotate(47deg); -webkit-transform:rotate(47deg);">4</div>
+                            </td>
+                            <td>
+                                <div style="transform: rotate(0deg); -webkit-transform:rotate(0deg);">4</div>
+                            </td>
+                            <td>
+                                <div style="transform: rotate(350deg); -webkit-transform:rotate(350deg);">4</div>
+                            </td>
+                            <td>
+                                <div style="transform: rotate(17deg); -webkit-transform:rotate(17deg);">4</div>
+                            </td>
+                            <td>
+                                <div style="transform: rotate(127deg); -webkit-transform:rotate(127deg);">4</div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table><b style="left: 66.5595px;"></b><span class="detail-onmap"><div class="loading size-l loader-path"></div></span>
+                <div data-do="extended" class="fg-gray size-xs inlined clickable" data-icon-after="g" data-ref="extended">10 days forecast</div>
+            </div>
+            <div class="services detail-content-box">
+                <div class="sticky-title" data-t="D_ABOUT_LOC2">About location</div>
+                <ul class="services-container content-container" style="height: 154px;">
+                    <li>N20°34'15", E83°51'32"</li>
+                    <li>Asia/Kolkata (+05:30)</li>
+                    <li class="first-big">Sunrise: 6:28 AM</li>
+                    <li class="first-big">sunset: 5:21 PM</li>
+                    <li class="first-big">dusk: 5:45 PM</li>
+                    <li class="first-big">Altitude: 420m (1377ft)</li>
+                </ul>
+                <div id="detail-alert-promo" data-do="newAlert">
+                    <div class="button size-m" data-icon="" data-do="openAlert" data-t="ALERTS_LINK_SHORT">Alert for this spot</div>
+                    <div class="fg-gray size-s disabled">Set up Windy Alert for this location and never miss your desired conditions.</div>
+                </div>
+            </div>
+        </div>
+        <div class="loading size-ultra full" data-ref="loader"></div>
+    </div>
+    <div id="detail-box">
+        <div class="dbitem transparent-switch compact size-s display-as" data-ref="mobileMenuSwitch">
+            <div data-do="set,table" class="inlined selected" data-icon="&amp;" data-t="ND_DISPLAY_BASIC">Basic</div>
+            <div data-do="set,wind" class="inlined" data-icon="" data-t="WIND">Wind</div>
+            <div data-do="set,meteogram" class="inlined" data-icon="">Meteogram</div>
+            <div data-do="set,airgram" class="inlined" data-icon="">Airgram</div>
+            <div data-do="set,waves" class="inlined" data-icon="{" data-t="WAVES">Waves</div>
+            <div data-do="more" class="inlined" data-icon=""><b data-t="MORE">More</b><b data-t="LESS">Less</b></div>
+        </div>
+        <div class="dbitem transparent-switch compact size-s display-model" data-ref="productSwitch">
+            <div data-do="set,ecmwf" data-tooltip="9km" class="landitem tooltip-up selected">ECMWF</div>
+            <div data-do="set,gfs" data-tooltip="22km" class="landitem tooltip-up">GFS</div>
+            <div data-do="set,mblue" class="landitem tooltip-up">METEOBLUE</div>
+            <div data-do="set,ecmwfWaves" data-tooltip="13km" class="seaitem tooltip-up">ECMWF WAM</div>
+            <div data-do="set,gfsWaves" data-tooltip="22km" class="seaitem tooltip-up">Wavewatch 3</div>
+            <div data-do="rqstOpen,multimodel" class="inlined" data-icon="" data-t="COMPARE">Compare</div>
+        </div><span class="dbitem model-info mobilehide"><span>Updated: 2h 7m ago</span></span>
+    </div>
+    <div class="webcams-circle animation clickable" data-ref="webcams">
+        <div class="circle boxshadow"></div><span data-t="D_WEBCAMS" class="animation uiyellow show">Webcams in vicinity</span></div>
+    <div class="stations-circle animation clickable" data-ref="stations">
+        <div class="circle boxshadow size-l" data-content="27°" style="background-color: rgb(255, 195, 94);"><small style="background-color: rgb(154, 228, 250);">6kt</small></div><span data-t="D_STATIONS" class="animation uiyellow show">Nearest weather stations</span></div>
+    <div id="detail-model-text" class="uiyellow" data-ref="model"></div>
+</div> -->

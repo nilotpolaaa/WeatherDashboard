@@ -1,5 +1,27 @@
-<app-side-nav-bar>
-</app-side-nav-bar>
-<app-header></app-header>
-<app-footer></app-footer>
+<app-header>
+</app-header>
+
 <router-outlet></router-outlet>
+
+<ejs-splitter #horizontal height='100%' width='100%'>
+    <e-panes>
+        <e-pane size='25%'>
+            <ng-template #content>
+                <app-side-nav-bar>
+                </app-side-nav-bar>
+            </ng-template>
+        </e-pane>
+        <e-pane size='50%'>
+            <ng-template #content>
+                <app-map></app-map>
+            </ng-template>
+        </e-pane>
+        <e-pane size='25%'>
+            <ng-template #content>
+                <app-data-tab></app-data-tab>
+            </ng-template>
+        </e-pane>
+    </e-panes>
+</ejs-splitter>
+
+<app-footer></app-footer>

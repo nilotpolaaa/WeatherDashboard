@@ -4,6 +4,7 @@
 /* .info_box box css start ***/
 
 @import "~leaflet/dist/leaflet.css";
+@import "../node_modules/@syncfusion/ej2/material.css";
 .infobox_datatable {
     max-height: 450px;
     overflow-y: auto;

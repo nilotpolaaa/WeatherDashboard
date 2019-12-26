@@ -13,6 +13,7 @@ import { GeoportalComponent } from './geoportal/geoportal.component';
 import { GeoportalModule } from './geoportal/geoportal.module';
 import { ExtremeWeatherModule } from './geoportal/extreme-weather/extreme-weather.module';
 import {AngularSplitModule} from 'angular-split';
+import { SplitterModule } from '@syncfusion/ej2-angular-layouts';
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,7 +30,8 @@ import {AngularSplitModule} from 'angular-split';
     // DrinkingWaterStressModule,
     BrowserModule,
     AngularSplitModule,
-    AppRoutingModule
+    AppRoutingModule,
+    SplitterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
